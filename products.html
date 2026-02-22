@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramzan Packages - Islamic Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-moon"></i>
+                <span>Ramzan Packages</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Islamic Products</h1>
+            <p>Browse our collection of premium Islamic products</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <div class="products-filter">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="books">Books</button>
+                <button class="filter-btn" data-filter="prayer">Prayer Items</button>
+                <button class="filter-btn" data-filter="decor">Home Decor</button>
+                <button class="filter-btn" data-filter="food">Food Items</button>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="books">
+                    <div class="product-image">
+                        <i class="fas fa-book-quran"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Holy Quran - Premium Edition</h3>
+                        <p class="product-desc">Beautiful Arabic Quran with translation</p>
+                        <div class="product-price">
+                            <span class="price">$25</span>
+                            <span class="original">$35</span>
+                        </div>
+                        <button class="btn btn-product" onclick="addToCart('Holy Quran - Premium Edition', 25)">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="prayer">
+                    <div class="product-image">
+                        <i class="fas fa-pray"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Premium Prayer Mat</h3>
+                        <p class="product-desc">Soft and comfortable prayer mat</p>
+                        <div class="product-price">
+                            <span class="price">$15</span>
+                            <span class="original">$20</span>
+                        </div>
+                        <button class="btn btn-product" onclick="addToCart('Premium Prayer Mat', 15)">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="decor">
+                    <div class="product-image">
+                        <i class="fas fa-mosque"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Allah Calligraphy Frame</h3>
+                        <p class="product-desc">Beautiful Islamic wall art</p>
+                        <div class="product-price">
+                            <span class="price">$20</span>
+                            <span class="original">$28</span>
+                        </div>
+                        <button class="btn btn-product" onclick="addToCart('Allah Calligraphy Frame', 20)">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="food">
+                    <div class="product-image">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Premium Dates - 1kg</h3>
+                        <p class="product-desc">Medjool dates from Saudi Arabia</p>
+                        <div class="product-price">
+                            <span class="price">$18</span>
+                            <span class="original">$25</span>
+                        </div>
+                        <button class="btn btn-product" onclick="addToCart('Premium Dates - 1kg', 18)">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="books">
+                    <div class="product-image">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Ahadeeth Collection</h3>
+                        <p class="product-desc">Sahih Bukhari & Muslim</p>
+                        <div class="product-price">
+                            <span class="price">$15</span>
+                            <span class="original">$22</span>
+                        </div>
+                        <button class="btn btn-product" onclick="addToCart('Ahadeeth Collection', 15)">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="prayer">
+                    <div class="product-image">
+                        <i class="fas fa-tasbih"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Islamic Prayer Beads</h3>
+                        <p class="product-desc">99 beads tasbih with case</p>
+                        <div class="product-price">
+                            <span class="price">$8</span>
+                            <span class="original">$12</span>
+                        </div>
+                        <button class="btn btn-product" onclick="addToCart('Islamic Prayer Beads', 8)">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card" data-category="decor">
+                    <div class="product-image">
+                        <i class="fas fa-star-and-crescent"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Ramadan Lantern</h3>
+                        <p class="product-desc">Traditional fanous decoration</p>
+                        <div class="product-price">
+                            <span class="price">$12</span>
+                            <span class="original">$18</span>
+                        </div>
+                        <button class="btn btn-product" onclick="addToCart('Ramadan Lantern', 12)">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card" data-category="food">
+                    <div class="product-image">
+                        <i class="fas fa-cookie"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Ramadan Special Sweets Box</h3>
+                        <p class="product-desc">Assorted traditional sweets</p>
+                        <div class="product-price">
+                            <span class="price">$22</span>
+                            <span class="original">$30</span>
+                        </div>
+                        <button class="btn btn-product" onclick="addToCart('Ramadan Special Sweets Box', 22)">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-card" data-category="prayer">
+                    <div class="product-image">
+                        <i class="fas fa-male"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Abaya - Traditional</h3>
+                        <p class="product-desc>Premium quality black abaya</p>
+                        <div class="product-price">
+                            <span class="price">$45</span>
+                            <span class="original">$60</span>
+                        </div>
+                        <button class="btn btn-product" onclick="addToCart('Abaya - Traditional', 45)">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product-card" data-category="books">
+                    <div class="product-image">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Dua Book - English</h3>
+                        <p class="product-desc">Collection of daily duas</p>
+                        <div class="product-price">
+                            <span class="price">$10</span>
+                            <span class="original">$15</span>
+                        </div>
+                        <button class="btn btn-product" onclick="addToCart('Dua Book - English', 10)">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="product-card" data-category="decor">
+                    <div class="product-image">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Islamic Wall Calendar 2024</h3>
+                        <p class="product-desc">Hijri & Gregorian calendar</p>
+                        <div class="product-price">
+                            <span class="price">$8</span>
+                            <span class="original">$12</span>
+                        </div>
+                        <button class="btn btn-product" onclick="addToCart('Islamic Wall Calendar 2024', 8)">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="product-card" data-category="food">
+                    <div class="product-image">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Attar Perfume Set</h3>
+                        <p class="product-desc">Traditional Islamic fragrances</p>
+                        <div class="product-price">
+                            <span class="price">$30</span>
+                            <span class="original">$40</span>
+                        </div>
+                        <button class="btn btn-product" onclick="addToCart('Attar Perfume Set', 30)">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <span class="close-cart" onclick="closeCart()">&times;</span>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0</span>
+            </div>
+            <button class="btn btn-checkout" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Cart Icon -->
+    <div class="cart-icon" onclick="openCart()">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cartCount">0</span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Ramzan Packages</h3>
+                    <p>Your trusted source for Ramadan packages and Islamic products</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@ramzanpackages.com</li>
+                        <li><i class="fas fa-map-marker"></i> Your City, Country</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ramzan Packages. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

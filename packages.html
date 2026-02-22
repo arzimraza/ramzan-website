@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramzan Packages - Our Packages</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-moon"></i>
+                <span>Ramzan Packages</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="packages.html" class="active">Packages</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Ramadan Packages</h1>
+            <p>Choose from our exclusive selection of Ramadan packages</p>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages">
+        <div class="container">
+            <div class="packages-filter">
+                <button class="filter-btn active" data-filter="all">All Packages</button>
+                <button class="filter-btn" data-filter="basic">Basic</button>
+                <button class="filter-btn" data-filter="standard">Standard</button>
+                <button class="filter-btn" data-filter="premium">Premium</button>
+            </div>
+            
+            <div class="packages-grid">
+                <!-- Package 1 -->
+                <div class="package-card" data-category="basic">
+                    <div class="package-badge"></div>
+                    <div class="Best Valuepackage-image">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <div class="package-content">
+                        <h3>Basic Package</h3>
+                        <p class="package-desc">Perfect for small families</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 5kg Rice</li>
+                            <li><i class="fas fa-check"></i> 2kg Dates</li>
+                            <li><i class="fas fa-check"></i> 2kg Sugar</li>
+                            <li><i class="fas fa-check"></i> 1L Cooking Oil</li>
+                            <li><i class="fas fa-check"></i> 1kg Flour</li>
+                        </ul>
+                        <div class="package-price">
+                            <span class="original-price">$120</span>
+                            <span class="discount-price">$99</span>
+                        </div>
+                        <button class="btn btn-package" onclick="openBookingModal('Basic Package', 99)">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="package-card" data-category="standard">
+                    <div class="package-badge popular">Most Popular</div>
+                    <div class="package-image">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <div class="package-content">
+                        <h3>Standard Package</h3>
+                        <p class="package-desc">Ideal for medium families</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 10kg Rice</li>
+                            <li><i class="fas fa-check"></i> 5kg Dates</li>
+                            <li><i class="fas fa-check"></i> 5kg Sugar</li>
+                            <li><i class="fas fa-check"></i> 3L Cooking Oil</li>
+                            <li><i class="fas fa-check"></i> 3kg Flour</li>
+                            <li><i class="fas fa-check"></i> 1kg Vermicelli</li>
+                        </ul>
+                        <div class="package-price">
+                            <span class="original-price">$180</span>
+                            <span class="discount-price">$149</span>
+                        </div>
+                        <button class="btn btn-package" onclick="openBookingModal('Standard Package', 149)">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="package-card" data-category="premium">
+                    <div class="package-badge">Premium</div>
+                    <div class="package-image">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <div class="package-content">
+                        <h3>Premium Package</h3>
+                        <p class="package-desc">Best for large families</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 15kg Premium Rice</li>
+                            <li><i class="fas fa-check"></i> 8kg Medjool Dates</li>
+                            <li><i class="fas fa-check"></i> 8kg Sugar</li>
+                            <li><i class="fas fa-check"></i> 5L Olive Oil</li>
+                            <li><i class="fas fa-check"></i> 5kg Flour</li>
+                            <li><i class="fas fa-check"></i> 2kg Vermicelli</li>
+                            <li><i class="fas fa-check"></i> Gift Box Included</li>
+                        </ul>
+                        <div class="package-price">
+                            <span class="original-price">$250</span>
+                            <span class="discount-price">$199</span>
+                        </div>
+                        <button class="btn btn-package" onclick="openBookingModal('Premium Package', 199)">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Package 4 -->
+                <div class="package-card" data-category="basic">
+                    <div class="package-image">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <div class="package-content">
+                        <h3>Family Starter Pack</h3>
+                        <p class="package-desc">Essential items for iftar</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 3kg Rice</li>
+                            <li><i class="fas fa-check"></i> 1kg Dates</li>
+                            <li><i class="fas fa-check"></i> 1kg Sugar</li>
+                            <li><i class="fas fa-check"></i> 500ml Oil</li>
+                        </ul>
+                        <div class="package-price">
+                            <span class="discount-price">$49</span>
+                        </div>
+                        <button class="btn btn-package" onclick="openBookingModal('Family Starter Pack', 49)">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Package 5 -->
+                <div class="package-card" data-category="standard">
+                    <div class="package-image">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <div class="package-content">
+                        <h3>Deluxe Family Pack</h3>
+                        <p class="package-desc">Complete Ramadan solution</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 12kg Rice</li>
+                            <li><i class="fas fa-check"></i> 6kg Dates</li>
+                            <li><i class="fas fa-check"></i> 6kg Sugar</li>
+                            <li><i class="fas fa-check"></i> 4L Cooking Oil</li>
+                            <li><i class="fas fa-check"></i> 4kg Flour</li>
+                            <li><i class="fas fa-check"></i> 2kg Vermicelli</li>
+                        </ul>
+                        <div class="package-price">
+                            <span class="original-price">$200</span>
+                            <span class="discount-price">$169</span>
+                        </div>
+                        <button class="btn btn-package" onclick="openBookingModal('Deluxe Family Pack', 169)">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Package 6 -->
+                <div class="package-card" data-category="premium">
+                    <div class="package-badge">Luxury</div>
+                    <div class="package-image">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="package-content">
+                        <h3>Royal Package</h3>
+                        <p class="package-desc">Ultimate Ramadan experience</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 20kg Basmati Rice</li>
+                            <li><i class="fas fa-check"></i> 10kg Premium Dates</li>
+                            <li><i class="fas fa-check"></i> 10kg Sugar</li>
+                            <li><i class="fas fa-check"></i> 6L Extra Virgin Oil</li>
+                            <li><i class="fas fa-check"></i> 6kg Flour</li>
+                            <li><i class="fas fa-check"></i> 3kg Vermicelli</li>
+                            <li><i class="fas fa-check"></i> Premium Gift Box</li>
+                            <li><i class="fas fa-check"></i> Free Delivery</li>
+                        </ul>
+                        <div class="package-price">
+                            <span class="original-price">$350</span>
+                            <span class="discount-price">$299</span>
+                        </div>
+                        <button class="btn btn-package" onclick="openBookingModal('Royal Package', 299)">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeBookingModal()">&times;</span>
+            <h2>Book Package</h2>
+            <form id="bookingForm" onsubmit="submitBooking(event)">
+                <input type="hidden" id="packageName" name="packageName">
+                <input type="hidden" id="packagePrice" name="packagePrice">
+                
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Delivery Address</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Selected Package:</label>
+                    <div id="selectedPackageInfo"></div>
+                </div>
+                
+                <button type="submit" class="btn">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Ramzan Packages</h3>
+                    <p>Your trusted source for Ramadan packages and Islamic products</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@ramzanpackages.com</li>
+                        <li><i class="fas fa-map-marker"></i> Your City, Country</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ramzan Packages. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
